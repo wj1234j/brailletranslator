@@ -50,6 +50,8 @@ body {
     background: #f4f6f8;
     border-radius: 8px;
     font-size: 30px;
+    overflow-wrap: anywhere;
+    word-break: break-word;
 }
 
 button {

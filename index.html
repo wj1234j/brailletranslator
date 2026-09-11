@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Braille Translator</title>
+</head>
+<body>
+
+<div class="box">
+<h1>Braille Translator</h1>
+
+<div class="nav">
+<a href="index.html">Braille to English</a>
+<a href="english-to-braille.html">English to Braille</a>
+</div>
+
+<button id="translateButton">Translate</button>
+<button id="speakButton">Read Aloud</button>
+<br>
+    <textarea
+        id="brailleInput"
+        placeholder="Enter Braille here..."
+    ></textarea>
+    
+<div class="braille-keyboard">
+
+    <div class="braille-row">
+        <button type="button" class="braille-key" data-dot="1">1</button>
+        <button type="button" class="braille-key" data-dot="4">4</button>
+    </div>
+
+    <div class="braille-row">
+        <button type="button" class="braille-key" data-dot="2">2</button>
+        <button type="button" class="braille-key" data-dot="5">5</button>
+    </div>
+
+    <div class="braille-row">
+        <button type="button" class="braille-key" data-dot="3">3</button>
+        <button type="button" class="braille-key" data-dot="6">6</button>
+    </div>
+
+</div>
+
+<button type="button" id="enterButton">Enter</button>
+<button type="button" id="spaceButton">Space</button>
+<button type="button" id="deleteButton">Delete</button>
+
+<p id="result"></p>
+
+<script src="braille-to-english.js"></script>
+
+</div>
+</body>
+</html>
